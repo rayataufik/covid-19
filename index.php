@@ -7,6 +7,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cek Penyebaran Virus Corona atau cek Penyebaran Virus Covid-19 di Indonesia">
+    <meta name="keywords" content="virus, corona, covid19, cek, penyebaran">
+    <meta name="author" content="Raya Taufik">
+
+    <link rel="shortcut icon" href="./assets/img/favicon.ico">
 
     <link rel="stylesheet" href="./assets/bootstrap.css">
     <link rel="stylesheet" href="./assets/style.css">
