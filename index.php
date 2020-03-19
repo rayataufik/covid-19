@@ -270,6 +270,8 @@
 
     </footer>
 
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
     <script src="./assets/jquery-3.4.1.min.js"></script>
     <script src="./assets/bootstrap.js"></script>
     <script src="./assets/bootstrap.bundle.js"></script>
@@ -292,6 +294,19 @@
 
             e.preventDefault();
         })
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200); // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200); // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function () { // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0 // Scroll to top of body
+            }, 500);
+        });
     </script>
 </body>
 
