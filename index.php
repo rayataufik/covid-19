@@ -1,5 +1,4 @@
-<?php include("./config/config.php");
-?>
+<?php include("./config/config.php");?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -55,12 +54,12 @@
 
     <div class="jumbotron jumbotron-fluid" id="mainHeader">
         <div class="container">
-            <h1 class="display-4">Cek Penyebaran
+            <h1 class="display-4">Penyebaran
                 Virus Covid-19</h1>
             <div class="sumber">
                 <div class="row justify-content-center">
                     <p><img src="./assets/img/clock.svg" alt="clock"> Last update
-                        <?php echo date("d M Y", strtotime($update)); ?></p>
+                        <?= $b; ?></p>
                     <p class="ml-2"><img src="./assets/img/source-data.svg" alt="source-data"> Sumber data dari John
                         Hopkins
                         University CSSE</p>
@@ -126,6 +125,33 @@
         </div>
     </section>
 
+    <section>
+        <div class="container">
+            <div class="col-md-12">
+                <div id="carouselExampleControls" data-aos="fade-up" data-aos-delay="600" class="carousel slide"
+                    data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="https://covid19.mathdro.id/api/countries/Indonesia/og"
+                                alt="Indonesia grafik">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://covid19.mathdro.id/api/og" alt="world grafik">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="pencegahan" class=" section bg-blue">
         <div class="container">
             <div class="row">
@@ -134,17 +160,19 @@
                         <h3 class="align-left text-cegah">
                             PENCEGAHAN</h3>
                         <p class="align-left text-cegah">
-                            Penyebaran virus Corona jenis terbaru mulai mengkhawatirkan sejumlah negara. Mula-mula virus
-                            yang menyerang saluran pernapasan ini, diidentifikasi di Wuhan, Tiongkok. Namun belakangan
-                            mulai menyebar ke beberapa negara. Lantas, bagaimana cara mengantisipasi penyebaran virus
-                            Corona?.
+                            Virus corona telah menyebar ke banyak negara dan menjadi berita utama setiap hari. Tidak
+                            bisa dipungkiri ini bisa menimbulkan rasa khawatir, panik, dan stres di tengah masyarakat.
+                            Secara ilmiah, stres terbukti membuat kita rentan terhadap penyakit karena stres menekan
+                            sistem kekebalan tubuh kita.
+                            Apa yang bisa kita lakukan untuk membantu menjaga ketahanan mental dan fisik di tengah
+                            pandemi ?
                         </p>
 
                     </div>
                 </div>
                 <div class="col-md-5">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="972" height="547" src="https://www.youtube.com/embed/dDD5N0tWouQ" frameborder="0"
+                        <iframe width="972" height="547" src="https://www.youtube.com/embed/nyC3LkVewJs" frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
@@ -164,7 +192,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6 d-flex">
-                    <div class="section-card flex" data-aos="fade-up">
+                    <div class="section-card flex" data-aos="fade-up" data-aos-delay="500">
                         <div class="section-card-content">
                             <div class="font-weight-bold mb-2 text-md">Hari ke-1</div>
                             <p class="text-sm2">Pasien mengalami demam. Tubuhnya mungkin juga mengalami semacam
@@ -173,7 +201,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 d-flex">
-                    <div class="section-card flex" data-aos="fade-up" data-aos-delay="600">
+                    <div class="section-card flex" data-aos="fade-up" data-aos-delay="500">
                         <div class="section-card-content">
                             <div class="font-weight-bold mb-2 text-md">Hari ke-5</div>
                             <p class="text-sm2">Ada pasien yang mengalami kesulitan bernapas. Kondisi ini biasanya
@@ -183,7 +211,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 d-flex">
-                    <div class="section-card flex" data-aos="fade-up">
+                    <div class="section-card flex" data-aos="fade-up" data-aos-delay="1000">
                         <div class="section-card-content">
                             <div class="font-weight-bold mb-2 text-md">Hari ke-7</div>
                             <p class="text-sm2">hari ke-7, menurut penelitian
@@ -192,7 +220,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 d-flex">
-                    <div class="section-card flex" data-aos="fade-up" data-aos-delay="600">
+                    <div class="section-card flex" data-aos="fade-up" data-aos-delay="1000">
                         <div class="section-card-content">
                             <div class="font-weight-bold mb-2 text-md">Hari ke-8</div>
                             <p class="text-sm2">Pada pasien yang mengalami kondisi parah, sekitar 15 persen
@@ -202,7 +230,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 d-flex">
-                    <div class="section-card flex" data-aos="fade-up">
+                    <div class="section-card flex" data-aos="fade-up" data-aos-delay="1500">
                         <div class="section-card-content">
                             <div class="font-weight-bold mb-2 text-md">Hari ke-10</div>
                             <p class="text-sm2">Ketika gejala memburuk, pasien akan dibawa ke ICU. Biasanya, mereka
@@ -212,7 +240,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 d-flex">
-                    <div class="section-card flex" data-aos="fade-up" data-aos-delay="600">
+                    <div class="section-card flex" data-aos="fade-up" data-aos-delay="1500">
                         <div class="section-card-content">
                             <div class="font-weight-bold mb-2 text-md">Hari ke-17</div>
                             <p class="text-sm2">Setelah menjalani perawatan selama lebih kurang 2,5 minggu, pasien yang
@@ -227,30 +255,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="embed-responsive embed-responsive-16by9 mt-3">
-                        <iframe width="972" height="547" src="https://www.youtube.com/embed/tCN6CbU4d0Q" frameborder="0"
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="972" height="547" src="https://www.youtube.com/embed/dDD5N0tWouQ" frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="col-md-7">
                     <div class="text-block mbr-col-sm-12 mbr-col-md-6">
-                        <h3 class="align-left text-cegah mt-3">
+                        <h3 class="align-left text-cegah">
                             PENULARAN</h3>
                         <p class="align-left text-cegah">
-                            Menurut Motivator Kesehatan, Hendrawan Nadesul mengatakan bahwa virus corona ini tidak
-                            ditularkan seperti virus lainnya yang airbone.
-                            Hal ini berarti jarak terjauh penderita untuk membawa virus sekitar 2 meter dan jika orang
-                            tersebut bersin, batuk, dan juga bercakap-cakap.
-                            Viru ada bermacam-macam, begitu pula cara masuk virus tersebut. Virus ini melalui
-                            pernafasan.
-                            Probabilitas orang akan tertular jika ia berdekatan sekitar 2 meter dengan pembawa virus.
-                            Pembawa virus ada 2 macam, yang pertama adalah orang tersebut sudah sakit. Yang kedua adalah
-                            dia belum sakit namun di dalam tubuhnya sudah ada virus.
-                            Pencegahan bagi orang sehat sebetulan bukan dengan menggunakan masker.
-                            Jika virus tersebut masih hidup di benda atau barang yang bersifat biologis seperti lendir,
-                            ludah, kulit manusia akan bertahan lebih lama.
-                            Pada prinsipnya, virus bukan berada di luar tubuh manusia.
+                            Penyebaran virus Corona jenis terbaru mulai mengkhawatirkan sejumlah negara. Mula-mula virus
+                            yang menyerang saluran pernapasan ini, diidentifikasi di Wuhan, Tiongkok. Namun belakangan
+                            mulai menyebar ke beberapa negara. Lantas, bagaimana cara mengantisipasi penyebaran virus
+                            Corona?.
+
                         </p>
 
                     </div>
@@ -262,7 +282,7 @@
     <footer class="page-footer font-small blue">
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">Made With <i class="fa fa-heart"></i> From <a
+        <div class="footer-copyright text-center py-3">Made With <i class="fa fa-heart"></i> By <a
                 href="https://github.com/rayataufik">Raya
                 Taufik</a>
         </div>
@@ -307,6 +327,14 @@
                 scrollTop: 0 // Scroll to top of body
             }, 500);
         });
+
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
     </script>
 </body>
 

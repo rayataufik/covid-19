@@ -13,7 +13,7 @@ $hasil = json_decode($hasil, true);
 $diketahui =  $hasil['confirmed']['value'];
 $sembuh = $hasil['recovered']['value'];
 $meninggal = $hasil['deaths']['value'];
-$update = $hasil['lastUpdate'];
+
 
 ?>
 
@@ -32,5 +32,9 @@ $hasilw = json_decode($hasilw, true);
 $diketahuiw = $hasilw['confirmed']['value'];
 $sembuhw = $hasilw['recovered']['value'];
 $meninggalw = $hasilw['deaths']['value'];
+$update = $hasilw['lastUpdate'];
 
+
+$time = new \DateTime($update);
+$b = $time->format('d F Y H:i A ');
 ?>
