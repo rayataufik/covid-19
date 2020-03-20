@@ -1,4 +1,4 @@
-<?php include("./config/config.php");?>
+<?php include("config/config.php");?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,10 +10,10 @@
     <meta name="keywords" content="virus, corona, covid19, cek, penyebaran">
     <meta name="author" content="Raya Taufik">
 
-    <link rel="shortcut icon" href="./assets/img/favicon.ico">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
 
-    <link rel="stylesheet" href="./assets/bootstrap.css">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="assets/bootstrap.css">
+    <link rel="stylesheet" href="assets/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -58,9 +58,9 @@
                 Virus Covid-19</h1>
             <div class="sumber">
                 <div class="row justify-content-center">
-                    <p><img src="./assets/img/clock.svg" alt="clock"> Last update
+                    <p><img src="assets/img/clock.svg" alt="clock"> Last update
                         <?= $b; ?></p>
-                    <p class="ml-2"><img src="./assets/img/source-data.svg" alt="source-data"> Sumber data dari John
+                    <p class="ml-2"><img src="assets/img/source-data.svg" alt="source-data"> Sumber data dari John
                         Hopkins
                         University CSSE</p>
                 </div>
@@ -86,14 +86,14 @@
                         <div class="world">
                             <h1>Total di seluruh dunia</h1>
                             <ul>
-                                <li data-toggle="tooltip" title="Confirmed"><img src="./assets/img/confirmed.svg"
+                                <li data-toggle="tooltip" title="Confirmed"><img src="assets/img/confirmed.svg"
                                         alt="sick people"><span> <?= $diketahuiw; ?>
                                         orang</span>
                                 </li>
-                                <li data-toggle="tooltip" title="Recovered"><img src="./assets/img/recovered.svg"
+                                <li data-toggle="tooltip" title="Recovered"><img src="assets/img/recovered.svg"
                                         alt="recovered people"><span class="recovered">
                                         <?= $sembuhw; ?> orang</span></li>
-                                <li data-toggle="tooltip" title="Death"><img src="./assets/img/death.svg"
+                                <li data-toggle="tooltip" title="Death"><img src="assets/img/death.svg"
                                         alt="death people"><span class="death">
                                         <?= $meninggalw; ?>
                                         orang</span></li>
@@ -106,14 +106,14 @@
                         <div class="world">
                             <h1>Total di Indonesia</h1>
                             <ul>
-                                <li data-toggle="tooltip" title="Confirmed"><img src="./assets/img/confirmed.svg"
+                                <li data-toggle="tooltip" title="Confirmed"><img src="assets/img/confirmed.svg"
                                         alt="sick people"><span> <?= $diketahui; ?>
                                         orang</span>
                                 </li>
-                                <li data-toggle="tooltip" title="Recovered"><img src="./assets/img/recovered.svg"
+                                <li data-toggle="tooltip" title="Recovered"><img src="assets/img/recovered.svg"
                                         alt="recovered people"><span class="recovered">
                                         <?= $sembuh; ?> orang</span></li>
-                                <li data-toggle="tooltip" title="Death"><img src="./assets/img/death.svg"
+                                <li data-toggle="tooltip" title="Death"><img src="assets/img/death.svg"
                                         alt="death people"><span class="death">
                                         <?= $meninggal; ?>
                                         orang</span></li>
@@ -292,10 +292,10 @@
 
     <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
-    <script src="./assets/jquery-3.4.1.min.js"></script>
-    <script src="./assets/bootstrap.js"></script>
-    <script src="./assets/bootstrap.bundle.js"></script>
-    <script src="./assets/jquery-easing/jquery.easing.min.js"></script>
+    <script src="assets/jquery-3.4.1.min.js"></script>
+    <script src="assets/bootstrap.js"></script>
+    <script src="assets/bootstrap.bundle.js"></script>
+    <script src="assets/jquery-easing/jquery.easing.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         $(document).ready(function () {
