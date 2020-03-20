@@ -87,15 +87,15 @@
                             <h1>Total di seluruh dunia</h1>
                             <ul>
                                 <li data-toggle="tooltip" title="Confirmed"><img src="assets/img/confirmed.svg"
-                                        alt="sick people"><span> <?= $diketahuiw; ?>
+                                        alt="sick people"><span> <?php echo number_format($diketahuiw) ; ?>
                                         orang</span>
                                 </li>
                                 <li data-toggle="tooltip" title="Recovered"><img src="assets/img/recovered.svg"
                                         alt="recovered people"><span class="recovered">
-                                        <?= $sembuhw; ?> orang</span></li>
+                                        <?php echo number_format($sembuhw); ?> orang</span></li>
                                 <li data-toggle="tooltip" title="Death"><img src="assets/img/death.svg"
                                         alt="death people"><span class="death">
-                                        <?= $meninggalw; ?>
+                                        <?php echo number_format($meninggalw) ; ?>
                                         orang</span></li>
                             </ul>
                         </div>
@@ -107,15 +107,15 @@
                             <h1>Total di Indonesia</h1>
                             <ul>
                                 <li data-toggle="tooltip" title="Confirmed"><img src="assets/img/confirmed.svg"
-                                        alt="sick people"><span> <?= $diketahui; ?>
+                                        alt="sick people"><span> <?php echo number_format($diketahui); ?>
                                         orang</span>
                                 </li>
                                 <li data-toggle="tooltip" title="Recovered"><img src="assets/img/recovered.svg"
                                         alt="recovered people"><span class="recovered">
-                                        <?= $sembuh; ?> orang</span></li>
+                                        <?php echo number_format($sembuh); ?> orang</span></li>
                                 <li data-toggle="tooltip" title="Death"><img src="assets/img/death.svg"
                                         alt="death people"><span class="death">
-                                        <?= $meninggal; ?>
+                                        <?php echo number_format($meninggal); ?>
                                         orang</span></li>
                             </ul>
                         </div>
@@ -269,8 +269,7 @@
                             Penyebaran virus Corona jenis terbaru mulai mengkhawatirkan sejumlah negara. Mula-mula virus
                             yang menyerang saluran pernapasan ini, diidentifikasi di Wuhan, Tiongkok. Namun belakangan
                             mulai menyebar ke beberapa negara. Lantas, bagaimana cara mengantisipasi penyebaran virus
-                            Corona?.
-
+                            Corona?
                         </p>
 
                     </div>
